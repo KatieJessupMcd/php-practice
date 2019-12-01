@@ -11,5 +11,3 @@
 
 <body>
   <h1>Simple Database App</h1>
-</body>
-</html>
