@@ -1,5 +1,6 @@
 <?php
 require "../config.php";
+require "../common.php";
 
 if (isset($_POST['submit'])) {
 
@@ -30,7 +31,11 @@ if (isset($_POST['submit'])) {
 ?>
 
 <?php require "templates/header.php"; ?>
+<?php if (isset($_POST['submit']) && $statement) { ?>
+  <?php echo escape($_POST['firstname']); ?> successfuly added.
+<?php } ?>
 
+<h2>Add User</h2>
 <div class="container">
   <div class="row">
     <div class="col-3">
