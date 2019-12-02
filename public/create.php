@@ -32,7 +32,9 @@ if (isset($_POST['submit'])) {
 
 <?php require "templates/header.php"; ?>
 <?php if (isset($_POST['submit']) && $statement) { ?>
-  <?php echo escape($_POST['firstname']); ?> successfuly added.
+  <div class="alert alert-success" role="alert">
+    <?php echo escape($_POST['firstname']); ?> successfuly added.
+  </div>
 <?php } ?>
 
 <h2>Add User</h2>

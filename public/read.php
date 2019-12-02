@@ -60,29 +60,30 @@ if (isset($_POST['submit'])) {
 </div>
 <?php } else { ?>
   <div class="col-6">
-    No result found for <?php echo escape($_POST['location']); ?>
+    <div class="alert alert-warning" role="alert">
+      No result found for <?php echo escape($_POST['location']); ?>
+    </div>
   </div>
   <div class="col-3">
   </div>
   </div>
 <?php }
 } ?>
-  <div class="col-3">
-  </div>
-  <div class="col-6">
-    <h2>Find User Based on Location</h2>
-    <form method="post">
-      <div class="form-group">
-        <label for="location">Location</label>
-        <input type="text" class="form-control" id="location" name="location" aria-describedby="text" placeholder="Enter location">
-      </div>
-      <button type="submit" name="submit" class="btn btn-primary">View Results</button>
-    </form>
-  </div>
-  <div class="col-3">
-  </div>
+<div class="col-3">
+</div>
+<div class="col-6">
+  <h2>Find User Based on Location</h2>
+  <form method="post">
+    <div class="form-group">
+      <label for="location">Location</label>
+      <input type="text" class="form-control" id="location" name="location" aria-describedby="text" placeholder="Enter location">
+    </div>
+    <button type="submit" name="submit" class="btn btn-primary">View Results</button>
+  </form>
+</div>
+<div class="col-3">
+</div>
 
 <div class="row">
   <a href="index.php">
-    < Back to Home</a> </div> 
-    <?php require "templates/footer.php" ?>
+    < Back to Home</a> </div> <?php require "templates/footer.php" ?>
