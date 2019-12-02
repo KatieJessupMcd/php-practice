@@ -10,4 +10,5 @@
 </head>
 
 <body>
+  <div class="container">
   <h1>Simple Database App</h1>
