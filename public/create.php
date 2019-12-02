@@ -36,38 +36,37 @@ if (isset($_POST['submit'])) {
 <?php } ?>
 
 <h2>Add User</h2>
-<div class="container">
-  <div class="row">
-    <div class="col-3">
-    </div>
-    <div class="col-6">
-      <form method="post">
-        <div class="form-group">
-          <label for="firstname">First Name</label>
-          <input type="text" class="form-control" id="firstname" name="firstname" aria-describedby="text" placeholder="Enter first name">
-        </div>
-        <div class="form-group">
-          <label for="lastname">Last Name</label>
-          <input type="text" class="form-control" id="lastname" name="lastname" aria-describedby="text" placeholder="Enter last name">
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" class="form-control" id="email" name="email" aria-describedby="text" placeholder="Enter email">
-        </div>
-        <div class="form-group">
-          <label for="age">Age</label>
-          <input type="text" class="form-control" id="age" name="age" aria-describedby="text" placeholder="Enter age">
-        </div>
-        <div class="form-group">
-          <label for="location">Location</label>
-          <input type="text" class="form-control" id="location" name="location" aria-describedby="text" placeholder="Enter location">
-        </div>
-        <button type="submit" name="submit" class="btn btn-primary">Submit</button>
-      </form>
-      <div class="col-3">
-      </div>
-    </div>
+<div class="row">
+  <div class="col-3">
   </div>
+  <div class="col-6">
+    <form method="post">
+      <div class="form-group">
+        <label for="firstname">First Name</label>
+        <input type="text" class="form-control" id="firstname" name="firstname" aria-describedby="text" placeholder="Enter first name">
+      </div>
+      <div class="form-group">
+        <label for="lastname">Last Name</label>
+        <input type="text" class="form-control" id="lastname" name="lastname" aria-describedby="text" placeholder="Enter last name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" name="email" aria-describedby="text" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="text" class="form-control" id="age" name="age" aria-describedby="text" placeholder="Enter age">
+      </div>
+      <div class="form-group">
+        <label for="location">Location</label>
+        <input type="text" class="form-control" id="location" name="location" aria-describedby="text" placeholder="Enter location">
+      </div>
+      <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  <div class="col-3">
+  </div>
+</div>
 
-  <a href="index.php">
-    < Back to Home</a> <?php require "templates/footer.php"; ?>
+<a href="index.php">
+  < Back to Home</a> <?php require "templates/footer.php"; ?>
